@@ -9,12 +9,26 @@
 
     <body>
         <main>
-            <form action="success.html" method="get" type="text">
+            <h2> Form 1 </h2>
+            <form action="success.html" method="get">
                 <label for="name"> Name : </label>
-                <input name="user_name" id="name">
+                <input name="user_name" id="name"  type="text" placeholder="name" required>
                 <label for="email"> Email: </label>
-                <input name="user_email" id="email" type="email">
+                <input name="user_email" id="email" type="email" placeholder="example@example.com" required >
                 <button> Submit </button> 
+            </form>
+
+            <h2>Form 2</h2>
+            <form> 
+                <label for ="textarea"> Text Area </label>
+                <input name="textarea" id="textarea" type="textarea" placeholder="Type text here..."> 
+                <label for = "date"> Date </label>
+                <input name ="date" id="date" type="date"> 
+                <label for = "color"> color </label>
+                <input name ="color" id="color" type="color"> 
+                <label for = "file"> File <label>
+                <input name ="file" id="file" type="file" accept="image/*" multiple> 
+
             </form>
 
         </main>
